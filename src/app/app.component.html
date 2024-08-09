@@ -1,0 +1,45 @@
+<div id="container">
+  <div id="calculator">
+    <div id="screen-calculator">{{ result$ | async }}</div>
+
+    <div id="calculator-buttons">
+      <div id="number" class="button-grid">
+        <button class="btn btn-primary" (click)="onNumberClick('7')">7</button>
+        <button class="btn btn-primary" (click)="onNumberClick('8')">8</button>
+        <button class="btn btn-primary" (click)="onNumberClick('9')">9</button>
+        <button class="btn btn-primary" (click)="onNumberClick('4')">4</button>
+        <button class="btn btn-primary" (click)="onNumberClick('5')">5</button>
+        <button class="btn btn-primary" (click)="onNumberClick('6')">6</button>
+        <button class="btn btn-primary" (click)="onNumberClick('1')">1</button>
+        <button class="btn btn-primary" (click)="onNumberClick('2')">2</button>
+        <button class="btn btn-primary" (click)="onNumberClick('3')">3</button>
+        <button class="btn btn-primary" (click)="onNumberClick(',')">,</button>
+        <button class="btn btn-primary zero" (click)="onNumberClick('0')">
+          0
+        </button>
+      </div>
+
+      <!-- Nút toán học -->
+      <div id="calculate" class="button-grid">
+        <button class="btn btn-primary" (click)="onCalculateClick('/')">
+          /
+        </button>
+        <button class="btn btn-primary" (click)="onCalculateClick('*')">
+          *
+        </button>
+        <button class="btn btn-primary" (click)="onCalculateClick('-')">
+          -
+        </button>
+        <button class="btn btn-primary" (click)="onCalculateClick('+')">
+          +
+        </button>
+        <button class="btn btn-primary" (click)="onCalculateClick('=')">
+          =
+        </button>
+        <button class="btn btn-primary-clear" (click)="onCalculateClick('C')">
+          C
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
